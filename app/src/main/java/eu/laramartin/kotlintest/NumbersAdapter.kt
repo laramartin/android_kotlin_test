@@ -21,7 +21,7 @@ class NumbersAdapter(private val numbers: List<Int>) : RecyclerView.Adapter<Numb
 
     class NumbersViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         fun bind(number: Int) {
-            itemView.number_text_view.setText(number)
+            itemView.number_text_view.text = number.toString()
         }
     }
 
